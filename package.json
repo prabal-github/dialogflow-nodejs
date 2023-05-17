@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "node index.js | bunyan -o short",
     "dev": "nodemon index.js | bunyan -o short"
   },
   "author": "",
@@ -14,7 +14,6 @@
   "dependencies": {
     "@google-cloud/dialogflow": "^5.7.1",
     "@sanity/client": "^5.4.2",
-    "actions-on-google": "^3.0.0",
     "algoliasearch": "^4.17.0",
     "axios": "^1.4.0",
     "bunyan": "^1.8.15",

@@ -105,7 +105,7 @@ const productInfo = async (productName, productQuery, productOption) => {
         text: text
       }
     }
-    const res = {}
+    let res = {}
     try {
       res = await getData(data)
     } catch (error) {
